@@ -23,10 +23,10 @@ const Contact = () => (
           <Insta />
           <ContactInfoText>agencia.sagittarius</ContactInfoText>
         </ContactInfo>
-        <ContactForm>
-          <ContactInput type="text" placeholder="Nome" />
-          <ContactInput type="email" placeholder="E-mail" />
-          <ContactTextArea placeholder="Sua mensagem" rows="3" />
+        <ContactForm name="contact" method="POST" data-netlify="true">
+          <ContactInput type="text" name="name" placeholder="Nome" />
+          <ContactInput type="email" name="email" placeholder="E-mail" />
+          <ContactTextArea name="message" placeholder="Sua mensagem" rows="3" />
           <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
       </ContactInfos>

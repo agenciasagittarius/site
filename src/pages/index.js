@@ -11,7 +11,7 @@ import Contact from "../components/Contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Agência Sagittarius" />
     <Hero />
     <About />
     <Services />
