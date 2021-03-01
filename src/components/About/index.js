@@ -56,19 +56,19 @@ const wind = keyframes`
   }
   25% {
     transform: rotate( 
-      1deg
+      5deg
     );
   }
   75% {
     transform: rotate( 
-      -1deg
+      -5deg
     );
   }
 `
 
 const AboutImage = styled(Img)`
   width: 65%;
-  animation: 3s Infinite  linear ${wind};
+  animation: 6s Infinite  linear ${wind};
 
   @media screen and (min-width: 768px) {
     width: 35%;
