@@ -1,9 +1,15 @@
+import ian from '../../assets/images/ian.jpg'
 import markian from '../../assets/images/markian.jpg'
 import flavio from '../../assets/images/flavio.jpg'
 import deyvidson from '../../assets/images/deyvidson.jpg'
 
 export const quotes = [
   {
+    image: ian,
+    name: "Ian Rochlin",
+    office: "CEO - GameJamPlus",
+    text: "A Agência Sagittarius sempre foi uma empresa super comprometida e detalhista nos trabalhos que fazem. Sempre me impressionou muito a qualidade dos serviços prestados por eles."
+  }, {
     image: markian,
     name: "Markian Kalinoski",
     office: "Gestor de Tráfego - Toronto/Canadá",

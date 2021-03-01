@@ -20,7 +20,7 @@ const Hero = () => (
     <HeroLogo src={Logo} />
       <HeroTitle>Utilize a tecnologia para ter resultados de outro mundo!</HeroTitle>
       <HeroText>Tenha um site mais profissional e consiga mais visibilidade e mais clientes, aumentando o seu faturamento.</HeroText>
-      <Button primary big target='_blank' href="https://api.whatsapp.com/send?phone=5521997938851&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">Solicitar Orçamento!</Button>
+      <Button primary big target='_blank' href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">Solicitar Orçamento!</Button>
     </HeroContent>
     <HeroShapeBottom>
       <HeroShapeBottomSVG data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

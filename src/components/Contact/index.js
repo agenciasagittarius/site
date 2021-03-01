@@ -15,9 +15,9 @@ const Contact = () => (
           <Email />
           <ContactInfoText>contato@agenciasagittarius.com.br</ContactInfoText>
         </ContactInfo>
-        <ContactInfo target='_blank' href='https://api.whatsapp.com/send?phone=5521997938851&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!'>
+        <ContactInfo target='_blank' href='https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!'>
           <Whatsapp />
-          <ContactInfoText>(21) 99793-8851</ContactInfoText>
+          <ContactInfoText>(21) 97988-4442</ContactInfoText>
         </ContactInfo>
         <ContactInfo target='_blank' href='https://www.instagram.com/agencia.sagittarius/'>
           <Insta />

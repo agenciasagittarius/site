@@ -13,6 +13,8 @@ import { quotes } from './content'
 const Testimonials = () =>  {
   const settings = {
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 6000,
     infinite: true,
     arrows: false,
     speed: 500,
