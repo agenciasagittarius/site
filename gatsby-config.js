@@ -6,12 +6,11 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingId: "G-GEDV35FN9L",
-        head: true,
-        anonymize: true,
-      }
+        id: "GTM-NM9C7PJ",
+        includeInDevelopment: false,
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
@@ -31,7 +30,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#171717`,
-        theme_color: `#663399`,
+        theme_color: `#1f3a93`,
         display: `minimal-ui`,
         icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
