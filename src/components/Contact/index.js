@@ -169,6 +169,7 @@ const ContactButton = styled.button`
   letter-spacing: 0.125rem;
   outline: none; 
   white-space: nowrap;
+  box-shadow: 0px 0px 10px 0px var(--purple);
   cursor: pointer;
   transition: all 0.3s ease-in;
 
