@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: var(--black);
     line-height: 1;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe-UI';
     font-weight: 400;
   }
 
