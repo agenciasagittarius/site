@@ -54,7 +54,6 @@ const Testimonials = () =>  {
           />
         ))}
       </Slider>
-      {/* <Carousel /> */}
       <ShapeBottom />
     </TestimonialsContainer>
   )
@@ -108,6 +107,9 @@ const TestimonialsTitle = styled.h2`
   text-align: center;
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 0.25rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `

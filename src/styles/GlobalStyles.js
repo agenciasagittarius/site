@@ -12,7 +12,9 @@ const GlobalStyle = createGlobalStyle`
     --white: #FFFAF5;
     --black: #171717;
     --blue: #1f3a93;
+    --blueTransparent: #1f3a9388;
     --purple: #663399;
+    --purpleTransparent: #66339988;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -80,6 +82,18 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover, &:active, &:focus {
       outline-style: none;
+    }
+  }
+
+  html{
+    &::-webkit-scrollbar-track {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+    }
+    &::-webkit-scrollbar {
+      width: .5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--primary);
     }
   }
 `

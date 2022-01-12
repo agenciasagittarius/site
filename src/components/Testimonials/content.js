@@ -5,11 +5,6 @@ import deyvidson from '../../assets/images/deyvidson.jpg'
 
 export const quotes = [
   {
-    image: ian,
-    name: "Ian Rochlin",
-    office: "CEO - GameJamPlus",
-    text: "A Agência Sagittarius sempre foi uma empresa super comprometida e detalhista nos trabalhos que fazem. Sempre me impressionou muito a qualidade dos serviços prestados por eles."
-  }, {
     image: markian,
     name: "Markian Kalinoski",
     office: "Gestor de Tráfego - Toronto/Canadá",
@@ -24,5 +19,10 @@ export const quotes = [
     name: "Deyvidson Carlos",
     office: "CEO - Maxximus Power",
     text: "A página de vendas do Maxximus ficou show de bola! E a conversão tá muito top! Gratidão pelos serviços prestados pela Agência Sagittarius, em breve daremos inícios ao projeto do ecommerce! Gratidão. Tamo junto!"
-  }
+  }, {
+    image: ian,
+    name: "Ian Rochlin",
+    office: "CEO - GameJamPlus",
+    text: "A Agência Sagittarius sempre foi uma empresa super comprometida e detalhista nos trabalhos que fazem. Sempre me impressionou muito a qualidade dos serviços prestados por eles."
+  }, 
 ]

@@ -5,6 +5,8 @@ import Video from '../../assets/videos/stars.mp4'
 import Logo from '../../assets/images/logo.png'
 import { Button } from '../Button'
 
+import Whatsapp from '../../assets/icons/whatsapp.svg'
+
 const Hero = () => (
   <HeroContainer>
     <HeroBg>
@@ -17,14 +19,21 @@ const Hero = () => (
       />
     </HeroBg>
     <HeroContent>
-    <HeroLogo src={Logo} />
-      <HeroTitle>Utilize a tecnologia para ter resultados de outro mundo!</HeroTitle>
-      <HeroText>Tenha um site mais profissional e consiga mais visibilidade e mais clientes, aumentando o seu faturamento.</HeroText>
-      <Button primary big target='_blank' href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">Solicitar Orçamento!</Button>
+    <HeroLogo src={Logo} draggable="false" />
+      <HeroTitle>
+        Sites e Landing Pages profissionais e de maneira personalizada!
+      </HeroTitle>
+      <HeroText>
+        Tenha mais resultados com seu negócio no digital com soluções feitas sob medida.
+      </HeroText>
+      <Button primary big target='_blank' href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">
+        <Whatsapp />
+        Entre em contato
+      </Button>
     </HeroContent>
     <HeroShapeBottom>
       <HeroShapeBottomSVG data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <HeroShapeBottomFill d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"></HeroShapeBottomFill>
+        <HeroShapeBottomFill d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" />
       </HeroShapeBottomSVG>
     </HeroShapeBottom>
   </HeroContainer>
@@ -33,9 +42,8 @@ const Hero = () => (
 export default Hero
 
 const HeroContainer = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   background: var(--black);
-  /* margin-top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +59,10 @@ const HeroContainer = styled.section`
     right: 0;
     left: 0;
     z-index: 3;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 80vh;
   }
 `
 
@@ -74,18 +86,17 @@ const VideoBg = styled.video`
 
 const HeroLogo = styled.img`
   width: 360px;
-  margin-bottom: 4rem;
-  /* position: absolute;
-  top: 4rem;   */
-  /* z-index: 5; */
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
 `
 
 const HeroContent = styled.div`
-  /* height: calc(100vh - 80px); */
   max-height: 100%;
   width: 100%;
-  max-width: 690px;
-  /* margin-top: 80px; */
+  max-width: 800px;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -97,20 +108,25 @@ const HeroContent = styled.div`
 const HeroTitle = styled.h1`
   margin-bottom: 1rem;
   font-family: 'Quantify';
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.25rem;
-  line-height: 2.75rem;
+  line-height: 2rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+    line-height: 2.75rem;
+  }
 `
 
 const HeroText = styled.p`
   margin-bottom: 3rem;
   padding: 0 1rem;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 400;
   text-align: center;
-  line-height: clamp(1.5rem, 2vw, 2rem);
+  line-height: clamp(1.5rem, 2.5vw, 2rem);
 `
 
 const HeroShapeBottom = styled.div`

@@ -9,7 +9,7 @@ const Launch = () =>  (
     <LaunchContent>
       <LaunchTitle>Infoprodutos</LaunchTitle>
       <LaunchText>Somos especialistas em infraestrutura de lançamentos e perpétuos. Trabalhamos em parceria de diversos experts e co-produtores desenvolvendo desde suas páginas de vendas até sua estrutura de e-mail marketing. Podemos auxiliar no seu projeto mesmo se você estiver começando agora, atuamos como prestadores de serviço ou como co-produtores de acordo com o que fizer mais sentido para o seu projeto.</LaunchText>
-      <Button primary href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento+para+o+meu+infoproduto!">Entrar em Contato</Button>
+      <Button primary target='_blank' href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento+para+o+meu+infoproduto!">Entrar em Contato</Button>
     </LaunchContent>
   </LaunchContainer>
 )
@@ -24,6 +24,7 @@ const LaunchContainer = styled.section`
   justify-content: center;
   align-items: center;
   color: var(--white);
+  position: relative;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

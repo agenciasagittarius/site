@@ -34,6 +34,25 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
+      
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /icons/
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        https: true,
+        www: true,
+        ErrorDocument: `
+          ErrorDocument 404 /error_pages/404.html
+        `,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

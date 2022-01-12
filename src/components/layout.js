@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import GlobalStyle from '../styles/GlobalStyles'
 
 // import Header from "./Header"
-import "./layout.css"
+// import "./layout.css"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -20,14 +20,14 @@ const Layout = ({ children }) => {
   // `)
 
   return (
-    <>
+    <LayoutContainer>
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <main>{children}</main>
       <Footer>
         © {new Date().getFullYear()} Agência Sagittarius
       </Footer>
-    </>
+    </LayoutContainer>
   )
 }
 
@@ -37,13 +37,16 @@ Layout.propTypes = {
 
 export default Layout
 
+const LayoutContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+`
 
 const Footer = styled.footer`
   padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-family: 'Quantify'; */
   font-size: 1rem;
   color: var(--white);
 `

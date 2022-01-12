@@ -7,7 +7,7 @@ import { AiOutlineInstagram as Insta } from 'react-icons/ai'
 
 const Contact = () => (
   <ContactContainer>
-    <ContactTitle>Entre em Contato</ContactTitle>
+    <ContactTitle>Entre em contato</ContactTitle>
     <ContactContent>
       <ContactImage src={contactimage} />
       <ContactInfos>
@@ -53,7 +53,6 @@ const ContactTitle = styled.h2`
   font-family: 'Quantify';
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: bold;
-  text-transform: capitalize;
   letter-spacing: 0.25rem;
 `
 
@@ -74,6 +73,10 @@ const ContactImage = styled.img`
   max-width: 500px;
   margin-bottom: 2rem;
   transform: scaleX(-1);
+
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
 `
 
 const ContactInfos = styled.div`
@@ -85,7 +88,8 @@ const ContactInfos = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    padding: 0 4rem;
+    width: 60%;    
+    padding: 0 2rem;
   }
 `
 

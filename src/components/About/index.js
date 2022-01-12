@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-// import { Button } from '../Button'
 
 const About = () =>  {
     const { astronautImage } = useStaticQuery(
@@ -23,9 +22,8 @@ const About = () =>  {
     <AboutContainer>
       <AboutImage fluid={astronautImage.childImageSharp.fluid} />
       <AboutContent>
-        <AboutTitle>Sagittarius</AboutTitle>
-        <AboutText>Somos uma agência especializada em negócios digitais. Nascemos com a proposta de desenvolver e potencializar negócios digitais através de soluções simples. Nos especializamos no mercado digital criando páginas de vendas e sites para vários especialistas e produtores, além de cuidar de toda infraestrutura de diversos lançamentos. Agora quero ajudar você a potencializar seu negócio!</AboutText>
-        {/* <Button primary target='_blank' href="https://api.whatsapp.com/send?phone=5521997938851&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">Quero potencializar meu negócio!</Button> */}
+        <AboutTitle>Sobre a Sagittarius</AboutTitle>
+        <AboutText>Somos uma agência especializada em projetos digitais. Nascemos com a proposta de desenvolver e potencializar negócios, através de soluções personalizadas. Nos especializamos no mercado digital criando páginas de vendas e sites para diversos especialistas e produtores, além de cuidar de toda infraestrutura de lançamento. Agora queremos ajudar você a potencializar seu negócio!</AboutText>
       </AboutContent>
     </AboutContainer>
   )
