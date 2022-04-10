@@ -8,8 +8,8 @@ import flavioFabre from '../../assets/images/portfolio/FlavioFabre.png'
 import flavioFabreMini from '../../assets/images/portfolio/FlavioFabreMini.png'
 import pilotosIoT from '../../assets/images/portfolio/PilotosIoT.png'
 import pilotosIoTMini from '../../assets/images/portfolio/PilotosIoTMini.png'
-import instaStart from '../../assets/images/portfolio/InstaStart.png'
-import instaStartMini from '../../assets/images/portfolio/InstaStartMini.png'
+import campoConectado from '../../assets/images/portfolio/CampoConectado.png'
+import campoConectadoMini from '../../assets/images/portfolio/CampoConectadoMini.png'
 
 export const portfoilItems = [
   {
@@ -17,6 +17,11 @@ export const portfoilItems = [
     image: indieHeroMini,
     imageFull: indieHero
   }, 
+  {
+    title: 'Campo Conectado', 
+    image: campoConectadoMini,
+    imageFull: campoConectado
+  },
   {
     title: 'XPhere', 
     image: xphereMini,
@@ -28,18 +33,13 @@ export const portfoilItems = [
     imageFull: toquinha
   },
   {
-    title: 'Dr. Flávio Fabre', 
-    image: flavioFabreMini,
-    imageFull: flavioFabre
-  }, 
-  {
     title: 'Pilotos IoT', 
     image: pilotosIoTMini,
     imageFull: pilotosIoT
   },
   {
-    title: 'InstaStart', 
-    image: instaStartMini,
-    imageFull: instaStart
-  },
+    title: 'Dr. Flávio Fabre', 
+    image: flavioFabreMini,
+    imageFull: flavioFabre
+  }, 
 ]
