@@ -3,7 +3,7 @@ import React from "react"
 // import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
-import GlobalStyle from '../styles/GlobalStyles'
+// import GlobalStyle from '../styles/GlobalStyles'
 
 // import Header from "./Header"
 // import "./layout.css"
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 
   return (
     <LayoutContainer>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <main>{children}</main>
       <Footer>
