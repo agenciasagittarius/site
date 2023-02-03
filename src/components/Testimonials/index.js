@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 import Slider from "react-slick";
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
-import Quote from '../Quote'
-import ShapeTop from '../ShapeTop'
-import ShapeBottom from '../ShapeBottom'
-import { quotes } from './content'
+import Quote from '../Quote';
+import ShapeBottom from '../ShapeBottom';
+import ShapeTop from '../ShapeTop';
+import { quotes } from './content';
 
-const Testimonials = () =>  {
+const Testimonials = () => {
   const settings = {
     dots: true,
     autoplay: true,
@@ -41,11 +41,13 @@ const Testimonials = () =>  {
 
   return (
     <TestimonialsContainer>
-      <ShapeTop />
+      <ShapeTop
+        color='white'
+      />
       <TestimonialsTitle>O que nossos clientes dizem</TestimonialsTitle>
       <Slider {...settings}>
         {quotes.map((item, index) => (
-          <Quote 
+          <Quote
             key={index}
             image={item.image}
             name={item.name}

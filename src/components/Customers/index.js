@@ -1,38 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
-import ShapeTop from '../ShapeTop'
-import ShapeBottom from '../ShapeBottom'
-import gamejamplus from '../../assets/images/customers/gamejamplus_white.svg'
-import indiehero from '../../assets/images/customers/indiehero_white.svg'
-import xphere from '../../assets/images/customers/xphere_white.svg'
-// import puc from '../../assets/images/customers/puc.png'
-// import nucleomemoria from '../../assets/images/customers/nucleomemoria.svg'
+import bndes from '../../assets/images/customers/bndes.svg'
+import cetuc from '../../assets/images/customers/cetuc.png'
+import gamejamplus from '../../assets/images/customers/gamejamplus.svg'
+import indiehero from '../../assets/images/customers/indiehero.svg'
+import xphere from '../../assets/images/customers/xphere.svg'
 
-const Customers = () =>  (
+const Customers = () => (
   <CustomersContainer>
-    <ShapeTop />
     <CustomersTitle>Alguns clientes</CustomersTitle>
     <CustomersContent>
-      <CustomersLogo src={xphere} alt="Logo " draggable="false" />
-      <CustomersLogo src={indiehero} alt="Logo " draggable="false" />
-      <CustomersLogo src={gamejamplus} alt="Logo " draggable="false" />
-      {/* <CustomersLogo src={nucleomemoria} alt="Logo " draggable="false" /> */}
-      {/* <CustomersLogo src={puc} alt="Logo " draggable="false" /> */}
+      <CustomersLogo src={gamejamplus} alt="" draggable="false" />
+      <CustomersLogo src={indiehero} alt="" draggable="false" />
+      <CustomersLogo src={xphere} alt="" draggable="false" />
+      <CustomersLogo src={cetuc} alt="" draggable="false" />
+      <CustomersLogo src={bndes} alt="" draggable="false" />
     </CustomersContent>
-    <ShapeBottom />
   </CustomersContainer>
 )
 
 export default Customers
 
 const CustomersContainer = styled.section`
-  background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
-  padding: 8rem calc((100vw - 1280px) / 2);
+  /* background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%); */
+  background: var(--white);
+  padding: 4rem calc((100vw - 1280px) / 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--white);
   position: relative;
 `
 
@@ -40,7 +36,7 @@ const CustomersLogo = styled.div`
   width: 120px;
   height: 120px;
   margin: 1rem 2rem;
-  background-image: ${({src}) => ("url("+src+")")};
+  background-image: ${({ src }) => ("url(" + src + ")")};
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,6 +55,10 @@ const CustomersContent = styled.div`
   flex-wrap: wrap;
 `
 const CustomersTitle = styled.h2`
+  background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   margin-bottom: 2rem;
   font-family: 'Quantify';
   font-size: clamp(2rem, 6vw, 4rem);

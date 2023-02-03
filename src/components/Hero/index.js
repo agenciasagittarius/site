@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Video from '../../assets/videos/stars.mp4'
 import Logo from '../../assets/images/logo.png'
+import Video from '../../assets/videos/stars.mp4'
 import { Button } from '../Button'
 
 import Whatsapp from '../../assets/icons/whatsapp.svg'
@@ -10,8 +10,8 @@ import Whatsapp from '../../assets/icons/whatsapp.svg'
 const Hero = () => (
   <HeroContainer>
     <HeroBg>
-      <VideoBg 
-        src={Video} 
+      <VideoBg
+        src={Video}
         type="video/mp4"
         autoPlay
         loop
@@ -19,12 +19,12 @@ const Hero = () => (
       />
     </HeroBg>
     <HeroContent>
-    <HeroLogo src={Logo} draggable="false" />
+      <HeroLogo src={Logo} draggable="false" />
       <HeroTitle>
-        Sites e Landing Pages profissionais e de maneira personalizada!
+        Aumente seu faturamento com uma landing page feita sob medida
       </HeroTitle>
       <HeroText>
-        Tenha mais resultados com seu negócio no digital com soluções feitas sob medida.
+        Desenvolvemos a landing page do seu negócio de maneira 100% personalizada, com design único e otimizada!
       </HeroText>
       <Button primary big target='_blank' href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">
         <Whatsapp />
@@ -112,11 +112,13 @@ const HeroTitle = styled.h1`
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.25rem;
-  line-height: 2rem;
+  line-height: clamp(1.75rem, 3.25vw, 2.25rem);
+  color: var(--primary);
+  text-shadow: 0 0 1rem var(--primary);
 
   @media screen and (min-width: 768px) {
     font-size: clamp(2rem, 3.5vw, 2.5rem);
-    line-height: 2.75rem;
+    line-height: clamp(2.25rem, 3.75vw, 2.75rem);
   }
 `
 
@@ -127,6 +129,7 @@ const HeroText = styled.p`
   font-weight: 400;
   text-align: center;
   line-height: clamp(1.5rem, 2.5vw, 2rem);
+  text-shadow: 0 0 0.25rem var(--white);
 `
 
 const HeroShapeBottom = styled.div`

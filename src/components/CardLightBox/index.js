@@ -1,13 +1,26 @@
-import React from 'react'
-import styled from 'styled-components'
-import LightBox from '../LightBox'
+import React, { useCallback, useState } from 'react';
+import styled from 'styled-components';
+import LightBox from '../LightBox';
 
-const CardLightBox = ({title, description, image, imageFull, alt, color, onlyTitle}) => {
+const CardLightBox = ({ title, description, image, imageFull, alt, color, onlyTitle }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  }
+
+  const handleClose = useCallback(
+    () => {
+      setIsOpen(false);
+    }, []
+  )
+
   return (
-    <LightBox src={imageFull} alt={alt}>
-      <CardContainer 
-        color={color ? 'true' : 'false'} 
+    <>
+      <CardContainer
+        color={color ? 'true' : 'false'}
         onlyTitle={onlyTitle ? 'true' : 'false'}
+        onClick={handleOpen}
       >
         <CardImageBox>
           <CardImage src={image} alt={alt} draggable="false" />
@@ -15,7 +28,14 @@ const CardLightBox = ({title, description, image, imageFull, alt, color, onlyTit
         <CardTitle>{title}</CardTitle>
         {description ? <CardText>{description}</CardText> : ''}
       </CardContainer>
-    </LightBox>
+
+      <LightBox
+        src={imageFull}
+        alt={alt}
+        isOpen={isOpen}
+        onClose={handleClose}
+      />
+    </>
   )
 }
 
@@ -24,15 +44,16 @@ export default CardLightBox
 const CardContainer = styled.div`
   width: 100%;
   max-width: 300px;
-  background: ${({color}) => (color === "true" ? 'linear-gradient(135deg, var(--blueTransparent) 0%, var(--purpleTransparent) 100%)' : 'rgba(0,0,0,0.2)')};
+  background: ${({ color }) => (color === "true" ? 'linear-gradient(135deg, var(--blueTransparent) 0%, var(--purpleTransparent) 100%)' : 'rgba(0,0,0,0.2)')};
   margin: 1rem;
-  padding: ${({onlyTitle}) => (onlyTitle === "true" ? '1rem 1.5rem .5rem' : '1rem 1.5rem 1.5rem')};
+  padding: ${({ onlyTitle }) => (onlyTitle === "true" ? '1rem 1.5rem .5rem' : '1rem 1.5rem 1.5rem')};
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all .5s;
+  cursor: pointer;
 
   &:hover{
     transform: translateY(-0.5rem);

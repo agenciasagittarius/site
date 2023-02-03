@@ -1,10 +1,10 @@
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-const About = () =>  {
-    const { astronautImage } = useStaticQuery(
+const About = () => {
+  const { astronautImage } = useStaticQuery(
     graphql`
       query {
         astronautImage: file(relativePath: { eq: "astronaut.png" }) {
@@ -22,8 +22,15 @@ const About = () =>  {
     <AboutContainer>
       <AboutImage fluid={astronautImage.childImageSharp.fluid} />
       <AboutContent>
-        <AboutTitle>Sobre a Sagittarius</AboutTitle>
-        <AboutText>Somos uma agência especializada em projetos digitais. Nascemos com a proposta de desenvolver e potencializar negócios, através de soluções personalizadas. Nos especializamos no mercado digital criando páginas de vendas e sites para diversos especialistas e produtores, além de cuidar de toda infraestrutura de lançamento. Agora queremos ajudar você a potencializar seu negócio!</AboutText>
+        <AboutTitle>
+          Sobre a Sagittarius
+        </AboutTitle>
+        <AboutText>
+          Somos uma agência especializada no desenvolvimento de sites e sistemas. Nascemos com a proposta de desenvolver e potencializar negócios, através de soluções personalizadas.
+        </AboutText>
+        <AboutText>
+          Temos ampla experiência no mercado digital, desenvolvemos páginas de vendas e sites para diversos especialistas e produtores, além de cuidar de toda infraestrutura de lançamento. Agora queremos ajudar você a potencializar seu negócio!
+        </AboutText>
       </AboutContent>
     </AboutContainer>
   )

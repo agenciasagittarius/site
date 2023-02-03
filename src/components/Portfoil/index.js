@@ -1,26 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
-import CardLightBox from '../CardLightBox'
-import ShapeTop from '../ShapeTop'
-import ShapeBottom from '../ShapeBottom'
-import { portfoilItems } from './content'
 import { Button } from '../Button'
+import CardLightBox from '../CardLightBox'
+import ShapeBottom from '../ShapeBottom'
+import ShapeTop from '../ShapeTop'
+import { portfoilItems } from './content'
 
 import Whatsapp from '../../assets/icons/whatsapp.svg'
 
-const Portfoil = () =>  (
+const Portfoil = () => (
   <PortfoilContainer>
     <ShapeTop />
     <PortfoilTitle>Confira alguns dos nossos trabalhos</PortfoilTitle>
     <PortfoilContent>
       {portfoilItems.map((item, index) => (
-        <CardLightBox 
+        <CardLightBox
           onlyTitle
           key={index}
           title={item.title}
           image={item.image}
           imageFull={item.imageFull}
-          alt={"Página do projeto "+item.title}
+          alt={"Página do projeto " + item.title}
         />
       ))}
     </PortfoilContent>
@@ -28,7 +28,9 @@ const Portfoil = () =>  (
       <Whatsapp />
       Solicitar um Orçamento
     </Button>
-    <ShapeBottom />
+    <ShapeBottom
+      color='white'
+    />
   </PortfoilContainer>
 )
 
