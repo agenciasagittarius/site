@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-facebook-pixel`,
+      resolve: `@hutsoninc/gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: "1359240221566713",
       },

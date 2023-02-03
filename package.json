@@ -5,10 +5,10 @@
   "version": "0.2.0",
   "author": "Herbert Veloso <herbert@agenciasagittarius.com.br>",
   "dependencies": {
+    "@hutsoninc/gatsby-plugin-facebook-pixel": "^3.0.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.5.0",
     "gatsby-image": "^3.11.0",
-    "gatsby-plugin-facebook-pixel": "^1.0.8",
     "gatsby-plugin-google-tagmanager": "^5.5.0",
     "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-manifest": "^5.5.0",
