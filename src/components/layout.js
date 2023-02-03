@@ -1,5 +1,5 @@
-import React from "react"
 import PropTypes from "prop-types"
+import React from "react"
 // import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <main>{children}</main>
       <Footer>
-        © {new Date().getFullYear()} Agência Sagittarius
+        © 2023 Agência Sagittarius
       </Footer>
     </LayoutContainer>
   )
