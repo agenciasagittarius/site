@@ -21,10 +21,10 @@ const Hero = () => (
     <HeroContent>
       <HeroLogo src={Logo} draggable="false" />
       <HeroTitle>
-        Aumente seu faturamento com uma landing page feita sob medida
+        Aumente seu faturamento com um site feito sob medida
       </HeroTitle>
       <HeroText>
-        Desenvolvemos a landing page do seu negócio de maneira 100% personalizada, com design único e otimizada!
+        Desenvolvemos o site do seu negócio de maneira 100% personalizada, com design único e otimizado!
       </HeroText>
       <Button primary big target='_blank' href="https://api.whatsapp.com/send?phone=5521979884442&text=Ol%c3%a1!+Vi+o+seu+site+e+gostaria+de+fazer+um+orçamento!">
         <Whatsapp />
